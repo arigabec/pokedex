@@ -19,7 +19,7 @@ export const PokeCard = (props) => {
         const {front_default} = sprites;
         setName(name);
         setImg(front_default);
-        console.log('Testing ', data);
+        console.log('Testing ', name);
     };
 
     getPokemon();
