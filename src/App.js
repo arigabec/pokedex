@@ -1,6 +1,6 @@
 import "./App.css";
 // import React, { useState, useEffect } from "react";
-import { PokeCard } from './components/PokeCard';
+// import { PokeCard } from './components/PokeCard';
 // import API from "./config/api";
 /*import { MyComponent } from './components/MyComponent';
 import { TrainerForm } from './components/TrainerForm';*/
