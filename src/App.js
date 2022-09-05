@@ -14,7 +14,8 @@ function App() {
   return (
     // <MyComponent name={name} setName={setName}></MyComponent>
     // <TrainerForm> </TrainerForm>
-    <PokeCard idPokemon={1}></PokeCard>
+    <h1>Hola</h1>
+    // <PokeCard idPokemon={1}></PokeCard>
   );
 }
 
