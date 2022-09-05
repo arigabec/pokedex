@@ -6,7 +6,7 @@ import API from "./config/api";
 import { TrainerForm } from './components/TrainerForm';*/
 
 
-/* AVANCE DE CLASES 
+// AVANCE DE CLASES 
 function App() {
   // const [name, setName] = useState('');
   // const [nameTrainer, setNameTrainer] = useState('');
@@ -14,13 +14,13 @@ function App() {
   return (
     // <MyComponent name={name} setName={setName}></MyComponent>
     // <TrainerForm> </TrainerForm>
-    <PokeCard idPokemon={4}></PokeCard>
+    <PokeCard idPokemon={1}></PokeCard>
   );
 }
 
-export default App;*/
+export default App;
 
-function App() {
+/* function App() {
   const [trainer, setTrainer] = useState();
   const getTrainerId = async () => {
     const trainerReponse = await API.get(`/trainer/3`);
@@ -36,4 +36,4 @@ function App() {
   // return <>{trainer && <PokeCard idPokemon={trainer.id_pokemon}></PokeCard>}</>;
 }
 
-export default App;
+export default App;*/
