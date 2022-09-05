@@ -1,6 +1,6 @@
 import "./App.css";
 // import React, { useState, useEffect } from "react";
-// import { PokeCard } from './components/PokeCard';
+import { PokeCard } from './components/PokeCard';
 // import API from "./config/api";
 /*import { MyComponent } from './components/MyComponent';
 import { TrainerForm } from './components/TrainerForm';*/
@@ -14,8 +14,8 @@ function App() {
   return (
     // <MyComponent name={name} setName={setName}></MyComponent>
     // <TrainerForm> </TrainerForm>
-    <h1>Hola</h1>
-    // <PokeCard idPokemon={1}></PokeCard>
+    //<h1>Hola</h1>
+    <PokeCard idPokemon={1}></PokeCard>
   );
 }
 
