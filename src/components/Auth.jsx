@@ -2,6 +2,8 @@ import { useFormik } from 'formik';
 import * as yup from 'yup';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
+import { login } from "../store/auth/authThunk";
+import { useDispatch } from "react-redux";
 
 const validationSchema = yup.object({
   email: yup
@@ -15,6 +17,7 @@ const validationSchema = yup.object({
 });
 
 export const Auth = () => {
+  const dispatch = useDispatch();
   const formik = useFormik({
     initialValues: {
       email: 'aaa@example.com',
@@ -22,7 +25,8 @@ export const Auth = () => {
     },
     validationSchema: validationSchema,
     onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
+      dispatch(login(values.email, values.password));
+      // alert(JSON.stringify(values, null, 2));
     },
   });
 

@@ -1,18 +1,13 @@
+import { logInWithEmailAndPassword } from "../../config/firebaseConfig";
 import { isLoading, setUser } from "./authSlice";
 
-const user = {
-    name: 'Andres',
-    lastName: 'Ballivian',
-    password: 'Andres1234'
-}
-
-export const login = () => {
+export const login = (email, password) => {
     return async (dispatch) => {
         dispatch(isLoading());
+        const loginResponse = await 
+            logInWithEmailAndPassword(email, password);
+        const {user} = loginResponse;
+        console.log(loginResponse);
         dispatch(setUser(user));
-        // TODO
-        // dispatch(firebase login)
-        // await user data
-        // dispatch(setUser(userData));
     };
 }
